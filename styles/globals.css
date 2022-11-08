@@ -31,7 +31,7 @@ select {
 }
 
 body {
-  background: var(--black);
+  background: #000000;
   font-family: "Inter", sans-serif;
   color: #CA7AF4;
   display: flex;

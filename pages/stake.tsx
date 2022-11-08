@@ -123,7 +123,7 @@ const Stake: NextPage = () => {
         </button>
       ) : (
         <>
-          <h2 className={styles.h2}>Your Crull Coins</h2>
+          <h3 className={styles.h3}>Your Crull Coins</h3>
 
           <div className={styles.tokenGrid}>
             <div className={styles.tokenItem}>
@@ -170,7 +170,7 @@ const Stake: NextPage = () => {
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
-          <h2 className={styles.h2}>Your Unstaked NFTs</h2>
+          <h3 className={styles.h3}>Your Unstaked NFTs</h3>
 
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => (

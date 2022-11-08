@@ -123,7 +123,7 @@ const Stake: NextPage = () => {
         </button>
       ) : (
         <>
-          <h2>Your Crull Coins</h2>
+          <h2 className={styles.h2}>Your Crull Coins</h2>
 
           <div className={styles.tokenGrid}>
             <div className={styles.tokenItem}>
@@ -149,7 +149,7 @@ const Stake: NextPage = () => {
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
-          <h2>Your Staked NFTs</h2>
+          <h2 className={styles.h2}>Your Staked NFTs</h2>
           <div className={styles.nftBoxGrid}>
             {stakedNfts?.map((nft) => (
               <div className={styles.nftBox} key={nft.metadata.id.toString()}>
@@ -157,7 +157,7 @@ const Stake: NextPage = () => {
                   metadata={nft.metadata}
                   className={styles.nftMedia}
                 />
-                <h3>{nft.metadata.name}</h3>
+                <h2 className={styles.h2}>{nft.metadata.name}</h2>
                 <button
                   className={`${styles.mainButton} ${styles.spacerBottom}`}
                   onClick={() => withdraw(nft.metadata.id)}
@@ -170,7 +170,7 @@ const Stake: NextPage = () => {
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
-          <h2>Your Unstaked NFTs</h2>
+          <h2 className={styles.h2}>Your Unstaked NFTs</h2>
 
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => (
@@ -179,7 +179,7 @@ const Stake: NextPage = () => {
                   metadata={nft.metadata}
                   className={styles.nftMedia}
                 />
-                <h3>{nft.metadata.name}</h3>
+                <h3 className={styles.h3}>{nft.metadata.name}</h3>
                 <button
                   className={`${styles.mainButton} ${styles.spacerBottom}`}
                   onClick={() => stakeNft(nft.metadata.id)}

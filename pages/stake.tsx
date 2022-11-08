@@ -123,7 +123,7 @@ const Stake: NextPage = () => {
         </button>
       ) : (
         <>
-          <h2>Your Tokens</h2>
+          <h2>Your Crull Coins</h2>
 
           <div className={styles.tokenGrid}>
             <div className={styles.tokenItem}>
@@ -137,12 +137,7 @@ const Stake: NextPage = () => {
                 {tokenBalance?.symbol}
               </p>
             </div>
-            <div className={styles.tokenItem}>
-              <h3 className={styles.tokenLabel}>Current Balance</h3>
-              <p className={styles.tokenValue}>
-                <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
-              </p>
-            </div>
+          
           </div>
 
           <button
